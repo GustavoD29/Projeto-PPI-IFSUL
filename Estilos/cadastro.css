@@ -1,0 +1,64 @@
+/*------------ Estilização do conteúdo da página: cadastro.html ------------*/
+
+main {
+    display: flex;
+    align-items: center;
+    background-image: url(../Mídia/Fundo-cadastro.png);
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.cadastro-box {
+    width: 300px;
+    margin: 50px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    color: #452625;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-family: 'Glacial Indifference', sans-serif;
+}
+
+.cadastro-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cadastro-box label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.cadastro-box input, .cadastro-box select {
+    width: 100%;
+    padding: 8px 0px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #e7dac7;
+}
+
+.cadastro-box input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+.cadastro-box button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #844444;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.cadastro-box button:hover {
+    background-color: #5a2e2e;
+}
+
+.logo img {
+    margin-right: 25vh;
+}

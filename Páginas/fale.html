@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contato </title>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Estilos/style.css">
+    <link rel="stylesheet" href="../Estilos/fale.css">
+</head>
+<body>
+    <!--------- Cabeçalho da página --------->
+    <header>
+        <div id="logo"> <a href="../index.html"> <img src="../Mídia/Old Story ORGC Marrom.png" alt="Logo old story"> </a> </div>
+        <nav id="navbar">
+            <form class="search-box" action="#" method="get">
+                <input type="text" name="pesquisa" placeholder="Procurar">
+                <button type="submit">🔍</button>
+            </form>
+            <ul>
+                <li id="inicio"><a href="../index.html"> INÍCIO </a> </li>
+                <li><a href="../Páginas/produtos.html"> PRODUTOS </a></li>
+                <li> <a href="../Páginas/sobre.html"> SOBRE NÓS </a></li>
+                <li> <a href="../Páginas/fale.html"> FALE CONOSCO </a></li>
+            </ul>
+        </nav>
+        <div id="end"> <a href="../Páginas/cadastro.html"> <img src="../Mídia/Captura de tela 2025-05-12 235742.png" alt="Login e carrinho"> </a> </div>
+    </header>
+    <!--------- Conteúdo do cabeçalho ---------->
+    <main>
+        <section class="contato">
+            <h2>Fale Conosco</h2>
+            <p>Preencha o formulário e entraremos em contato o mais breve possível.</p>
+            <form class="form-contato" action="#" method="post">
+                <label for="nome">Nome completo:</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone">
+                <label for="assunto">Assunto:</label>
+                <select id="assunto" name="assunto" required>
+                    <option value="">Selecione</option>
+                    <option value="duvida">Dúvida</option>
+                    <option value="sugestao">Sugestão</option>
+                    <option value="reclamacao">Reclamação</option>
+                </select>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <!--------- Rodapé da página ---------->
+    <footer class="rodape">
+        <div class="conteudo-rodape">
+            <div class="info-contato">
+                <h3>Contato</h3>
+                <p>Email: contato@oldstory.com</p>
+                <p>Telefone: (51) 99999-9999</p>
+                <p>Endereço: Rua Vintage, 123 - Porto Alegre, RS</p>
+            </div>
+            <div class="redes-sociais">
+                <h3>Siga-nos</h3>
+                <p> Instagram </p>
+                <p> Facebook </p>
+                <p> Whatsapp </p> <br>
+                <img src="../Mídia/icons8-instagram-50.png" alt="Instagram">
+                <img src="../Mídia/icons8-facebook-novo-50.png" alt="Facebook">
+                <img src="../Mídia/icons8-whatsapp-50.png" alt="Whatsapp">
+            </div>
+        </div>
+        <div class="copy">
+            <p>&copy; 2025 Old Story. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
