@@ -10,12 +10,12 @@ trabalho. O trabalho será desenvolvido de forma individual. Pode buscar auxilio
 internet, porém não serão aceitos trabalhos copiados da internet ou de colegas.
 
 ## Os requisitos mínimos da primeira parte do trabalho são:
-• Fazer no mínimo 4 páginas lincadas entre elas;
-• Conter uma Tabela;
-• Conter uma Lista;
-• Conter imagens;
-• Conter um áudio ou vídeo;
-• Conter um formulário com no mínimo 6 campos de tipos diferentes;
+- Fazer no mínimo 4 páginas lincadas entre elas;
+- Conter uma Tabela;
+- Conter uma Lista;
+- Conter imagens;
+- Conter um áudio ou vídeo;
+- Conter um formulário com no mínimo 6 campos de tipos diferentes;
 
 
 ## 📄 Tecnologias
