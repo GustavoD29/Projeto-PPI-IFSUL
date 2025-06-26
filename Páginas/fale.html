@@ -7,28 +7,58 @@
     <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../Estilos/style.css">
     <link rel="stylesheet" href="../Estilos/fale.css">
+    <link rel="stylesheet" href="../Estilos/cadastro.css">
 </head>
 <body>
     <!--------- Cabeçalho da página --------->
     <header>
-        <div id="logo"> <a href="../index.html"> <img src="../Mídia/Old Story ORGC Marrom.png" alt="Logo old story"> </a> </div>
+        <div id="logo"> <a href="../index.html" class="img-link"> <img src="../Mídia/Old Story ORGC Marrom.png" alt="Logo old story">
+            </a> </div> <!-- Logo Old Story -->
         <nav id="navbar">
-            <form class="search-box" action="#" method="get">
-                <input type="text" name="pesquisa" placeholder="Procurar">
+            <form class="search-box" action="../Páginas/produtos.html" method="get">
+                <input type="text" name="pesquisa" id="pesquisar" placeholder="Procurar">
+                <!-- Bloco de pesquisa do site ao centro -->
                 <button type="submit">🔍</button>
             </form>
             <ul>
-                <li id="inicio"><a href="../index.html"> INÍCIO </a> </li>
+                <li id="inicio"><a href="../index.html"> INÍCIO </a> </li> <!-- Bloco de âncora para outras páginas -->
                 <li><a href="../Páginas/produtos.html"> PRODUTOS </a></li>
                 <li> <a href="../Páginas/sobre.html"> SOBRE NÓS </a></li>
                 <li> <a href="../Páginas/fale.html"> FALE CONOSCO </a></li>
             </ul>
         </nav>
-        <div id="end"> <a href="../Páginas/cadastro.html"> <img src="../Mídia/Captura de tela 2025-05-12 235742.png" alt="Login e carrinho"> </a> </div>
+        <div id="end"> <a id="botaoCadastro"> <img src="../Mídia/Captura de tela 2025-05-12 235742.png"
+                    alt="Login e carrinho"> </a> </div> <!-- Imagem de login e carrinho -->
+        <div class="cadastro-box" id="cadastro-box"> <!-- Caixa de login com entrada de dados -->
+            <div class="conteudo-cadastro">
+                <span id="fechar" class="fechar">&times;</span>
+                <h2> Login </h2>
+                <form action="#" method="post">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" required>
+                    <label for="data">Data de Nascimento:</label>
+                    <input type="date" id="data" name="data">
+                    <label for="sexo">Sexo:</label>
+                    <select id="sexo" name="sexo">
+                        <option value="feminino">Feminino</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                    <label>
+                        <input type="checkbox" name="termos"> Aceito os termos
+                    </label>
+                    <button type="submit">Cadastrar</button>
+                </form>
+            </div>
+        </div>
     </header>
     <!--------- Conteúdo do cabeçalho ---------->
     <main>
-        <section class="contato">
+        <section class="contato"> <!-- Caixa de contato com fale conosco e caixas para inserir dados e mensagem -->
             <h2>Fale Conosco</h2>
             <p>Preencha o formulário e entraremos em contato o mais breve possível.</p>
             <form class="form-contato" action="#" method="post">
@@ -52,15 +82,15 @@
         </section>
     </main>
     <!--------- Rodapé da página ---------->
-    <footer class="rodape">
+   <footer class="rodape">
         <div class="conteudo-rodape">
-            <div class="info-contato">
+            <div class="info-contato"> <!-- Info com as informações da loja -->
                 <h3>Contato</h3>
                 <p>Email: contato@oldstory.com</p>
                 <p>Telefone: (51) 99999-9999</p>
                 <p>Endereço: Rua Vintage, 123 - Porto Alegre, RS</p>
             </div>
-            <div class="redes-sociais">
+            <div class="redes-sociais"> <!-- Redes sociais da loja -->
                 <h3>Siga-nos</h3>
                 <p> Instagram </p>
                 <p> Facebook </p>
@@ -74,6 +104,8 @@
             <p>&copy; 2025 Old Story. Todos os direitos reservados.</p>
         </div>
     </footer>
-
+    <script src="../Códigos/produtos.js"></script>
+    <script src="../Códigos/script.js"></script>
 </body>
+
 </html>
