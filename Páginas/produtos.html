@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,110 +8,307 @@
     <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../Estilos/style.css">
     <link rel="stylesheet" href="../Estilos/produtos.css">
+    <link rel="stylesheet" href="../Estilos/cadastro.css">
 </head>
+
 <body>
     <!--------- Cabeçalho da página --------->
     <header>
-        <div id="logo"> <a href="../index.html"> <img src="../Mídia/Old Story ORGC Marrom.png" alt="Logo old story"> </a> </div>
+        <div id="logo"> <a href="../index.html" class="img-link"> <img src="../Mídia/Old Story ORGC Marrom.png" alt="Logo old story">
+            </a> </div> <!-- Logo Old Story -->
         <nav id="navbar">
             <form class="search-box" action="#" method="get">
-                <input type="text" name="pesquisa" placeholder="Procurar">
+                <input type="text" name="pesquisa" id="pesquisar" placeholder="Procurar">
+                <!-- Bloco de pesquisa do site ao centro -->
                 <button type="submit">🔍</button>
             </form>
             <ul>
-                <li id="inicio"><a href="../index.html"> INÍCIO </a> </li>
+                <li id="inicio"><a href="../index.html"> INÍCIO </a> </li> <!-- Bloco de âncora para outras páginas -->
                 <li><a href="../Páginas/produtos.html"> PRODUTOS </a></li>
                 <li> <a href="../Páginas/sobre.html"> SOBRE NÓS </a></li>
                 <li> <a href="../Páginas/fale.html"> FALE CONOSCO </a></li>
             </ul>
         </nav>
-        <div id="end"> <a href="../Páginas/cadastro.html"> <img src="../Mídia/Captura de tela 2025-05-12 235742.png" alt="Login e carrinho"> </a> </div>
+        <div id="end"> <a id="botaoCadastro"> <img src="../Mídia/Captura de tela 2025-05-12 235742.png"
+                    alt="Login e carrinho"> </a> </div> <!-- Imagem de login e carrinho -->
+        <div class="cadastro-box" id="cadastro-box"> <!-- Caixa de login com entrada de dados -->
+            <div class="conteudo-cadastro">
+                <span id="fechar" class="fechar">&times;</span>
+                <h2> Login </h2>
+                <form action="#" method="post">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" required>
+                    <label for="data">Data de Nascimento:</label>
+                    <input type="date" id="data" name="data">
+                    <label for="sexo">Sexo:</label>
+                    <select id="sexo" name="sexo">
+                        <option value="feminino">Feminino</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                    <label>
+                        <input type="checkbox" name="termos"> Aceito os termos
+                    </label>
+                    <button type="submit">Cadastrar</button>
+                </form>
+            </div>
+        </div>
     </header>
     <!--------- Conteúdo do cabeçalho ---------->
     <main>
-        <h2> <i>Encontre seus achados aqui!</i></h2>
+        <h2 id="tituloProdutos"> <i>Encontre seus achados aqui!</i></h2>
         <form class="ordenar-form">
             <p> Ordenar por: </p>
-            <select>
-                <option value="mais-vendidos">Mais vendidos</option>
+            <select id="ordenar">
                 <option value="menor-preco">Menor preço</option>
                 <option value="maior-preco">Maior preço</option>
-                <option value="avaliacao">Melhor avaliação</option>
             </select>
         </form>
-        <div id="container">
-            <div class="card1">
-                <img src="../Mídia/card1.png" alt="card1">
-                <table>
-                    <tr>
-                        <th> XÍCARA DE CAFÉ LIMOGES </th>
-                    </tr>
-                    <tr>
-                        <td class="preco"> R$150,00 </td>
-                    </tr>
-                    <tr>
-                        <td><i> 3x de 50 sem juros </i></td>
-                    </tr>
-                </table>
-                <button> <a href="../Páginas/cadastro.html"> Comprar </a> </button>
+        <button id="descricao"> Descrição dos Produtos </button>
+        <div class="carrossel-container">
+            <button id="prevBtn">&#8592;</button>
+            <div class="carrossel" id="carrossel">
+                <div id="container">
+                    <div class="card"> <!-- Primeiro produto -->
+                        <img src="../Mídia/card1.png">
+                        <table>
+                            <tr>
+                                <th> XÍCARA DE CAFÉ LIMOGES </th>
+                            </tr>
+                            <div class="descricaoProduto">
+                                <tr>
+                                    <td class="preco"> R$150,00 </td>
+                                </tr>
+                                <tr>
+                                    <td class="parcelas"><i> 3x de 50 sem juros </i></td>
+                                </tr>
+                            </div>
+                        </table>
+                        <button class="botao"> <a href="../Páginas/cadastro.html"> Comprar </a> </button>
+                        <!-- Botão de comprar que direciona para a página de cadastro -->
+                    </div>
+                    <div class="card"> <!-- Segundo produto -->
+                        <img src="../Mídia/card2.png">
+                        <table>
+                            <tr>
+                                <th> ABAJUR RM PORCELANA ORIETAL </th>
+                            </tr>
+                            <div class="descricaoProduto">
+                                <tr>
+                                    <td class="preco"> R$1.990,00 </td>
+                                </tr>
+                                <tr>
+                                    <td class="parcelas"><i> 3x de 663,33 sem juros </i></td>
+                                </tr>
+                            </div>
+                        </table>
+                        <button class="botao"> <a href="../Páginas/cadastro.html"> Comprar </a> </button>
+                        <!-- Botão de comprar que direciona para a página de cadastro -->
+                    </div>
+                    <div class="card"> <!-- Terceiro produto -->
+                        <img src="../Mídia/card3.png">
+                        <table>
+                            <tr>
+                                <th> TRIO DE CHÁ PORCELANA JAPONESA </th>
+                            </tr>
+                            <div class="descricaoProduto">
+                                <tr>
+                                    <td class="preco"> R$289,00 </td>
+                                </tr>
+                                <tr>
+                                    <td class="parcelas"><i> 3x de 96,33 sem juros </i></td>
+                                </tr>
+                            </div>
+                        </table>
+                        <button class="botao"> <a href="../Páginas/cadastro.html"> Comprar </a></button>
+                        <!-- Botão de comprar que direciona para a página de cadastro -->
+                    </div>
+                    <div class="card"> <!-- Quarto produto -->
+                        <img src="../Mídia/card4.png">
+                        <table>
+                            <tr>
+                                <th> VASO BOHEMIA </th>
+                            </tr>
+                            <div class="descricaoProduto">
+                                <tr>
+                                    <td class="preco"> R$2.390,00 </td>
+                                </tr>
+                                <tr>
+                                    <td class="parcelas"><i> 3x de 796,66 sem juros </i></td>
+                                </tr>
+                            </div>
+                        </table>
+                        <button class="botao"> <a href="../Páginas/cadastro.html"> Comprar </a> </button>
+                        <!-- Botão de comprar que direciona para a página de cadastro -->
+                    </div>
+                    <div class="card"> <!-- Quinto produto -->
+                        <img src="../Mídia/bergere.webp">
+                        <table>
+                            <tr>
+                                <th> BERGERE LOUIS XV </th>
+                            </tr>
+                            <div class="descricaoProduto">
+                                <tr>
+                                    <td class="preco"> R$4.990,00 </td>
+                                </tr>
+                                <tr>
+                                    <td class="parcelas"><i> 3x de 1.663,33 sem juros </i></td>
+                                </tr>
+                            </div>
+                        </table>
+                        <button class="botao"> <a href="../Páginas/cadastro.html"> Comprar </a> </button>
+                        <!-- Botão de comprar que direciona para a página de cadastro -->
+                    </div>
+                    <div class="card"> <!-- Sexto produto -->
+                        <img src="../Mídia/Licoeira.webp">
+                        <table>
+                            <tr>
+                                <th> LICOREIRA ST.LOUIS </th>
+                            </tr>
+                            <div class="descricaoProduto">
+                                <tr>
+                                    <td class="preco"> R$3.290,00 </td>
+                                </tr>
+                                <tr>
+                                    <td class="parcelas"><i> 3x de 1.096,67 sem juros </i></td>
+                                </tr>
+                            </div>
+                        </table>
+                        <button class="botao"> <a href="../Páginas/cadastro.html"> Comprar </a> </button>
+                        <!-- Botão de comprar que direciona para a página de cadastro -->
+                    </div>
+                    <div class="card"> <!-- Sétimo produto -->
+                        <img src="../Mídia/vaso-rosé.webp">
+                        <table>
+                            <tr>
+                                <th> VASO EM VIDRO FOSCO ROSÉ </th>
+                            </tr>
+                            <div class="descricaoProduto">
+                                <tr>
+                                    <td class="preco"> R$1.299,00 </td>
+                                </tr>
+                                <tr>
+                                    <td class="parcelas"><i> 3x de R$433,00 sem juros </i></td>
+                                </tr>
+                            </div>
+                        </table>
+                        <button class="botao"> <a href="../Páginas/cadastro.html"> Comprar </a> </button>
+                        <!-- Botão de comprar que direciona para a página de cadastro -->
+                    </div>
+                    <div class="card"> <!-- Oitavo produto -->
+                        <img src="../Mídia/taça-cristal.webp">
+                        <table>
+                            <tr>
+                                <th> TAÇA CRISTAL ÂMBAR </th>
+                            </tr>
+                            <div class="descricaoProduto">
+                                <tr>
+                                    <td class="preco"> R$449,00 </td>
+                                </tr>
+                                <tr>
+                                    <td class="parcelas"><i> 3x de R$149,67 sem juros </i></td>
+                                </tr>
+                            </div>
+                        </table>
+                        <button class="botao"> <a href="../Páginas/cadastro.html"> Comprar </a> </button>
+                        <!-- Botão de comprar que direciona para a página de cadastro -->
+                    </div>
+                    <div class="card"> <!-- Nono produto -->
+                        <img src="../Mídia/papagaio.webp">
+                        <table>
+                            <tr>
+                                <th> PAPAGAIO EM PORCELANA </th>
+                            </tr>
+                            <div class="descricaoProduto">
+                                <tr>
+                                    <td class="preco"> R$3.990,00 </td>
+                                </tr>
+                                <tr>
+                                    <td class="parcelas"><i> 3x de R$1.330,00 sem juros </i></td>
+                                </tr>
+                            </div>
+                        </table>
+                        <button class="botao"> <a href="../Páginas/cadastro.html"> Comprar </a> </button>
+                        <!-- Botão de comprar que direciona para a página de cadastro -->
+                    </div>
+                    <div class="card"> <!-- Décimo produto -->
+                        <img src="../Mídia/escultura.webp">
+                        <table>
+                            <tr>
+                                <th> GRUPO ESCULTÓRICO DE BISCUIT </th>
+                            </tr>
+                            <div class="descricaoProduto">
+                                <tr>
+                                    <td class="preco"> R$2.590,00 </td>
+                                </tr>
+                                <tr>
+                                    <td class="parcelas"><i> 3x de R$863,33 sem juros </i></td>
+                                </tr>
+                            </div>
+                        </table>
+                        <button class="botao"> <a href="../Páginas/cadastro.html"> Comprar </a> </button>
+                        <!-- Botão de comprar que direciona para a página de cadastro -->
+                    </div>
+                    <div class="card"> <!-- Décimo segundo produto -->
+                        <img src="../Mídia/uveira.webp">
+                        <table>
+                            <tr>
+                                <th> UVEIRA EM OPALINA </th>
+                            </tr>
+                            <div class="descricaoProduto">
+                                <tr>
+                                    <td class="preco"> R$720,00 </td>
+                                </tr>
+                                <tr>
+                                    <td class="parcelas"><i> 3x de R$240,00 sem juros </i></td>
+                                </tr>
+                            </div>
+                        </table>
+                        <button class="botao"> <a href="../Páginas/cadastro.html"> Comprar </a> </button>
+                        <!-- Botão de comprar que direciona para a página de cadastro -->
+                    </div>
+                    <div class="card"> <!-- Segundo produto -->
+                        <img src="../Mídia/incensário.webp">
+                        <table>
+                            <tr>
+                                <th> INCENSÁRIO CHINÊS EM CLOISONNÉ </th>
+                            </tr>
+                            <div class="descricaoProduto">
+                                <tr>
+                                    <td class="preco"> R$899,00 </td>
+                                </tr>
+                                <tr>
+                                    <td class="parcelas"><i> 3x de R$299.67 sem juros </i></td>
+                                </tr>
+                            </div>
+                        </table>
+                        <button class="botao"> <a href="../Páginas/cadastro.html"> Comprar </a> </button>
+                        <!-- Botão de comprar que direciona para a página de cadastro -->
+                    </div>
+                </div>
             </div>
-            <div class="card2">
-                <img src="../Mídia/card2.png" alt="card2">
-                <table>
-                    <tr>
-                        <th> ABAJUR RM PORCELANA ORIETAL </th>
-                    </tr>
-                    <tr>
-                        <td class="preco"> R$1.990,00 </td>
-                    </tr>
-                    <tr>
-                        <td><i> 3x de 663,33 sem juros </i></td>
-                    </tr>
-                </table>
-                <button> <a href="../Páginas/cadastro.html"> Comprar </a> </button>
-            </div>
-            <div class="card3">
-                <img src="../Mídia/card3.png" alt="card3">
-                <table>
-                    <tr>
-                        <th> TRIO DE CHÁ PORCELANA JAPONESA </th>
-                    </tr>
-                    <tr>
-                        <td class="preco"> R$289,00 </td>
-                    </tr>
-                    <tr>
-                        <td><i> 3x de 96,33 sem juros </i></td>
-                    </tr>
-                </table>
-                <button> <a href="../Páginas/cadastro.html"> Comprar </a></button>
-            </div>
-            <div class="card4">
-                <img src="../Mídia/card4.png" alt="card4">
-                <table>
-                    <tr>
-                        <th> VASO BOHEMIA </th>
-                    </tr>
-                    <tr>
-                        <td class="preco"> R$2.390,00 </td>
-                    </tr>
-                    <tr>
-                        <td><i> 3x de 796,66 sem juros </i></td>
-                    </tr>
-                </table>
-                <button> <a href="../Páginas/cadastro.html"> Comprar </a> </button>
-            </div>
+            <button id="nextBtn">&#8594;</button>
         </div>
     </main>
+    <div id="msgVazia">
+        <h1> Produto não encontrado... </p>
+            <p> Nenhum resultado foi encontrado para sua pesquisa. </p>
+    </div>
+
     <!--------- Rodapé da página ---------->
     <footer class="rodape">
         <div class="conteudo-rodape">
-            <div class="info-contato">
+            <div class="info-contato"> <!-- Info com as informações da loja -->
                 <h3>Contato</h3>
                 <p>Email: contato@oldstory.com</p>
                 <p>Telefone: (51) 99999-9999</p>
                 <p>Endereço: Rua Vintage, 123 - Porto Alegre, RS</p>
             </div>
-            <div class="redes-sociais">
+            <div class="redes-sociais"> <!-- Redes sociais da loja -->
                 <h3>Siga-nos</h3>
                 <p> Instagram </p>
                 <p> Facebook </p>
@@ -124,6 +322,8 @@
             <p>&copy; 2025 Old Story. Todos os direitos reservados.</p>
         </div>
     </footer>
-
+    <script src="../Códigos/produtos.js"></script>
+    <script src="../Códigos/script.js"></script>
 </body>
+
 </html>
