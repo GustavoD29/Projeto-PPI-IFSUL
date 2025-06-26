@@ -1,6 +1,6 @@
 /*------------ Estilização do conteúdo da página: fale.html ------------*/
 
-main {
+main { /* Estilização do contéudo da página, com a coloração, imagem de fundo e a formatação de tamanho */
     background-color: #5c3535;
     padding: 1px 0px;
     padding-bottom: 10px;
@@ -12,7 +12,7 @@ main {
     background-position: center;
 }
 
-.contato {
+.contato { /* Formatação da caixa de Fale Conosco */
     max-width: 600px;
     margin: 40px auto;
     padding: 30px;
@@ -23,24 +23,24 @@ main {
     color: #452625;
 }
 
-.contato h2 {
+.contato h2 { /* Formatação do título da caixa de contato */
     text-align: center;
     margin-bottom: 10px;
     color: #844444;
 }
 
-.contato p {
+.contato p { /* Formatação do parágrafo abaixo do título */
     text-align: center;
     margin-bottom: 30px;
 }
 
-.form-contato label {
+.form-contato label { /* Formatação da caixa de cadastro */
     display: block;
     margin-bottom: 6px;
     font-weight: bold;
 }
 
-.form-contato input, .form-contato select, .form-contato textarea {
+.form-contato input, .form-contato select, .form-contato textarea { /* Formatação da caixa de cadastro */
     width: 100%;
     padding: 10px 0px;
     border: 1.5px solid #ccc;
@@ -49,7 +49,7 @@ main {
     font-size: 14px;
 }
 
-.form-contato button {
+.form-contato button { /* Formatação do botão da caixa de cadastro */
     width: 100%;
     padding: 12px;
     background-color: #844444;
@@ -61,6 +61,6 @@ main {
     transition: background-color 0.3s ease;
 }
 
-.form-contato button:hover {
+.form-contato button:hover { /* Formatação do botão da caixa de cadastro quando pressionado */
     background-color: #5c2e2e;
 }
