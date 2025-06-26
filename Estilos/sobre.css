@@ -1,6 +1,6 @@
 /*------------ Estilização do conteúdo da página: .html ------------*/
 
-.background-video {
+.background-video { /* Estilização do contéudo da página, com a coloração e a formatação de tamanho */
     object-fit: cover;
     position: absolute;
     height: 100vh;
@@ -8,7 +8,7 @@
     z-index: -1;
 }
 
-.card1 {
+.card1 { /* Estilização da caixa de "sobre mim" da old story */
     margin: 100px auto;
     width: 700px;
     height: auto;
@@ -20,17 +20,17 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.card1 h1 {
+.card1 h1 { /* Formatação do título do card1 */
     border-bottom: #5c3535 solid 1px;
     padding-bottom: 20px;
     margin-bottom: 30px;
 }
 
-.card1 p {
+.card1 p { /* Tamanho da fonte do texto sobre a Old Story */
     font-size: 1.3rem;
 }
 
-.card2 {
+.card2 { /* Estilização do card2 abaixo do sobre a Old Story */
     background-color: #e7dac7;
     color: #452625;
     padding: 40px;
@@ -41,7 +41,7 @@
     font-family: 'Glacial Indifference', sans-serif;
 }
 
-.card2 > div {
+.card2 > div { /* Formatação das div dentro do card2 */
     display: flex;
     align-items: center;
     gap: 15px;
@@ -49,16 +49,16 @@
     text-align: left;
 }
 
-.card2 img {
+.card2 img { /* Formatação dos icons antes dos textos */
     width: 50px;
     height: auto;
 }
 
-.entrega img {
+.entrega img { /* Tamanho do icon */
     width: 70px;
 }
 
-.card2 .info {
+.card2 .info { /* Formatação das informações do card2 */
     display: flex;
     flex-direction: column;
 }
