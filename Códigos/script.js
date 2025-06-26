@@ -18,8 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Criação da imagem (logo acima do pop-up)
   const img = document.createElement('img');
-  img.src = '../Mídia/Old Story ORGC Branco.png';
-  img.alt = 'Descrição da imagem';
+  img.src = 'Mídia/Old Story ORGC Branco.png';
   img.style.marginBottom= '650px';
   img.style.width = '200px'; 
 
