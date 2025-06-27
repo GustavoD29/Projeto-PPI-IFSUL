@@ -1,4 +1,14 @@
 // ------------------------- Filtro de maios e menor -------------------------
+function priceToNumber(precoStr) {
+  return parseFloat(
+    precoStr
+      .replace(/\s/g, '')     // Remove espaços
+      .replace('R$', '')      // Remove símbolo R$
+      .replace(/\./g, '')     // Remove separadores de milhar
+      .replace(',', '.')      // Substitui vírgula decimal por ponto
+  );
+}
+
 const select  = document.getElementById('ordenar');          
 const cont    = document.getElementById('container');       
 const titulo  = document.getElementById('tituloProdutos');    
