@@ -25,9 +25,24 @@ document.addEventListener('DOMContentLoaded', function () {
   popup.appendChild(img);
 });
 
+// ------------------------- Faz um evento na nav -------------------------
+const nav = document.getElementById('item');
+
+nav.addEventListener("mouseover", () => {
+    nav.style.backdropFilter = 'blur(10px)';
+    nav.style.background = '#5a2e2e';
+    nav.style.border = '1px solid rgba(255, 255, 255, 0.3)';
+    nav.style.borderRadius = '30px';
+    nav.style.padding = '20px';
+    nav.style.transition = 'all 0.5s ease';
+});
+
+nav.addEventListener('mouseleave', () => {
+    nav.style = 'none';
+    nav.style.transition = 'all 0.5s ease'; 
+}); 
 
 // ------------------------- Carrossel de imagens com bolinhas -------------------------
-
 const imagens = document.querySelectorAll('.imagem-direita img');
 
 const bolinhas = document.querySelectorAll('.bolinha');
